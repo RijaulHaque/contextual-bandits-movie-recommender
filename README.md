@@ -29,11 +29,15 @@ Our experiments revealed a critical trade-off between **Convergence Speed** and 
 * **Reward Engineering:** Binary (Strict 4+ stars) vs. Stochastic (Probabilistic 3+ stars).
 * **Baselines:** Random Agent, SVD (Matrix Factorization).
 
-## 📊 Visualizations
+## 📊 Visualizations:
 
-* **Cumulative CTR:** `images/ctr_graph.png`
-* **Regret Analysis:** `images/regret_graph.png`
-* **Precision@5 Comparison:** `images/precision_chart.png`
+<p align="center">
+  <img src="images/CTR_comparison_all_at_10_000.png" width="45%">
+  <img src="images/Cummalative_regret_all_at_10_000.png" width="45%">
+ </p>
+ <p align="center">
+  <img src="images/P@5_for_all.png" width="45%">
+</p>
 
 ## ⚙️ Installation & Usage
 
