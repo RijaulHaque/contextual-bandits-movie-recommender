@@ -1,0 +1,8 @@
+# File: contextual-bandits-movie-recommender/requirements.txt
+
+numpy
+pandas
+matplotlib
+scipy
+gymnasium
+requests
