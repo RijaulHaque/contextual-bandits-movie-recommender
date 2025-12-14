@@ -30,7 +30,6 @@ Our experiments revealed a critical trade-off between **Convergence Speed** and 
 * **Baselines:** Random Agent, SVD (Matrix Factorization).
 
 ## 📊 Visualizations
-*(Add your generated graphs here after uploading them to the repo)*
 
 * **Cumulative CTR:** `images/ctr_graph.png`
 * **Regret Analysis:** `images/regret_graph.png`
