@@ -45,18 +45,19 @@ Our experiments revealed a critical trade-off between **Convergence Speed** and 
 
 ## ⚙️ Installation & Usage
 
-### 1. Prerequisites
-Ensure you have Python installed along with the following libraries:
+### A. Prerequisites
+Ensure you have Python installed along with the following libraries:  
+
 ```bash
 pip install numpy pandas matplotlib scipy
 
 ```
 
-### 2. Dataset
+### B. Dataset
 Download Link [GroupLens](https://grouplens.org "MovieLens Dataset Source")  
 
 
-### 3. Running the Simulation
+### C. Running the Simulation
 Execute the main script (or notebook) to run the 10,000-episode simulation:
 
 ```bash
@@ -67,19 +68,35 @@ jupyter notebook Bandit_Movie_Recommender.ipynb
 
 ```
 
-📂 Project Structure
+### D. Experiment Flow (What happens when you run main.py):
 
-```
-├── ml-100k/                # Dataset folder
-├── images/                 # Saved graphs (CTR, Regret, Precision)
-├── src/
-│   ├── environment.py      # Custom MovieLens Environment
-│   ├── agents.py           # LinUCB, Thompson Sampling Classes
-│   └── evaluation.py       # Precision@K calculations
-├── main.py                 # Main execution script
-└── README.md               # Project documentation
+1. **Data Loading:** Checks for ml-100k data; downloads and preprocesses it (User Context Vectors) if missing.
 
-```
+2. **Simulations:** Runs 10,000-episode simulations for:
+
+    * Random Agent (Baseline)
+
+    * LinUCB Agent
+
+    * Linear Thompson Sampling Agent
+
+    * Stochastic Reward Agent SE-LinUCB (Proposed Method)
+
+3. **Evaluation:** Calculates Cumulative CTR, Regret, and Precision@5 metrics for all agents.  
+
+4. **Benchmarking:** Trains an offline SVD model to establish the theoretical performance ceiling.  
+
+5. **Visualization:** Generates and displays comparative learning curves and bar charts.
+
+
+## 📊 Key Results:
+
+* **Speed:** LinUCB achieved the fastest convergence for Click-Through Rate (CTR).  
+
+* **Quality:** Linear Thompson Sampling demonstrated superior recommendation quality (Precision@5) compared to LinUCB.  
+
+* **Engagement:** The proposed Stochastic Environment significantly increased total engagement volume (~53% CTR) by capturing passive user interest.
+
 
 ---
 
@@ -99,8 +116,8 @@ jupyter notebook Bandit_Movie_Recommender.ipynb
 
   * **Kangkita Baruah**
 
-Dept. of Computer Science & Engineering,  
-Dibrugarh University Institute of Engineering & Technology(DUIET)
+  *Dept. of Computer Science & Engineering,  
+  Dibrugarh University Institute of Engineering & Technology(DUIET)*
 
 ---
 
