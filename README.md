@@ -33,8 +33,12 @@ Our experiments revealed a critical trade-off between **Convergence Speed** and 
 
 <p align="center">
   <img src="images/CTR_comparison_all_at_10_000.png" width="45%">
-  <img src="images/Cummalative_regret_all_at_10_000.png" width="45%">
  </p>
+ 
+ <p align="center">
+ <img src="images/Cummalative_regret_all_at_10_000.png" width="30%">
+  </p>
+
  <p align="center">
   <img src="images/P@5_for_all.png" width="45%">
 </p>
