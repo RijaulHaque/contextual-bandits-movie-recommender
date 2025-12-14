@@ -43,6 +43,22 @@ Our experiments revealed a critical trade-off between **Convergence Speed** and 
   <img src="images/P@5_for_all.png" width="45%">
 </p>
 
+## 📂 Project Structure
+The codebase is organized as follows:
+
+```
+├── ml-100k/                # Dataset folder (Auto-downloaded on first run)
+├── src/
+│   ├── __init__.py
+│   ├── environment.py      # Custom Gym Environments (Standard & Stochastic) + Data Loading
+│   ├── agents.py           # LinUCB and Thompson Sampling Agent Classes
+│   └── evaluation.py       # Metrics (Precision@K, Regret, SVD) and Plotting Functions
+├── main.py                 # Main execution script (Orchestrator)
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
+
+```
+
 ## ⚙️ Installation & Usage
 
 ### A. Prerequisites
